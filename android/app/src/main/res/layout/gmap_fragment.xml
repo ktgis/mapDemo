@@ -1,0 +1,15 @@
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gmap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.kt.maps.GMapFragment"
+    map:centerX="956820"
+    map:centerY="1942285"
+    map:rotation="0"
+    map:tilt="0"
+    map:zoom="8"
+    map:maxZoom="14"
+    map:minZoom="0"/>    
+
