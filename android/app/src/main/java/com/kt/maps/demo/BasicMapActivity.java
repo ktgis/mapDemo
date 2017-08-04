@@ -474,7 +474,7 @@ public class BasicMapActivity extends Activity implements OnMapReadyListener, On
         gMap.setOnOverlayDragListener(this);
         gMap.setOnMapTapListener(this);
         gMap.getRenderScheduler().setOnFpsListener(this);
-        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor());
+        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor(), getApplicationContext());
         gMap.setOnAnimationEndListener(this);
         this.gMap = gMap;
 

@@ -3,6 +3,7 @@ package com.kt.maps.demo;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 import com.kt.maps.GMap;
 import com.kt.maps.GMap.OnViewpointChangeListener;
 import com.kt.maps.GMapFragment;
+import com.kt.maps.GMapRoadType;
+import com.kt.maps.GMapShared;
 import com.kt.maps.OnMapReadyListener;
 import com.kt.maps.ViewpointChange;
 import com.kt.maps.model.Viewpoint;
@@ -50,7 +53,7 @@ public class TrafficInfoActivity extends Activity implements OnMapReadyListener,
     public void onMapReady(GMap map) {
         this.gMap = map;
         // map.moveTo(new Viewpoint(Constants.예술의전당, 4));
-        map.setGTrafficLayerAdaptor(new TrafficAdaptor());
+        map.setGTrafficLayerAdaptor(new TrafficAdaptor(), getApplicationContext());
 
         map.setNetworkLayerVisible(true);
 

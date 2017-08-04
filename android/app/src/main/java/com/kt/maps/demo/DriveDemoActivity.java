@@ -53,7 +53,7 @@ public class DriveDemoActivity extends Activity implements OnMapReadyListener, O
         driveDemo = new DriveDemo(this, map);
         map.setOnViewpointChangeListener(this);
         map.getRenderScheduler().setOnFpsListener(this);
-        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor());
+        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor(), getApplicationContext());
     }
 
     public void flipAnimation(View view) {

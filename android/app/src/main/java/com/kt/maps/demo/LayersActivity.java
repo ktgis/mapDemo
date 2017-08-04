@@ -163,7 +163,7 @@ public class LayersActivity extends Activity implements OnMapReadyListener,
 
         gMap.setOnViewpointChangeListener(this);
         gMap.setBuilding3dMinZoom(11);
-        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor());
+        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor(), getApplicationContext());
         gMap.setLowLevelLayerVisible(false);
         gMap.setBackgroundLayerVisible(false);
         gMap.setRoadLayerVisible(false);

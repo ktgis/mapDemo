@@ -409,7 +409,7 @@ public class FpsTestActivity extends Activity implements OnMapReadyListener, OnF
         gMap.setOnViewpointChangeListener(this);
         gMap.setOnIdleListener(this);
         gMap.getRenderScheduler().setOnFpsListener(this);
-        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor());
+        gMap.setGTrafficLayerAdaptor(new TrafficAdaptor(), getApplicationContext());
 //        gMap.getNativeManager().getLayerManager().setFullAnimationUpdate(true);
     }
 
