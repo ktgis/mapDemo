@@ -41,6 +41,8 @@
     <string name="layers_description">Various layers consist map</string>
     <string name="measure">Measure</string>
     <string name="measure_description">distance and area measurement</string>
+    <string name="image_map">Image Map</string>
+    <string name="image_map_description">Image Map Style</string>
 
     <!-- permission -->
     <string name="permission_dialog_title">권한확인알림</string>

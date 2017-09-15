@@ -95,6 +95,9 @@
             android:name="com.kt.maps.demo.LayersActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/layers" />
+        <activity
+            android:name="com.kt.maps.demo..ImageMapActivity"
+            android:label="@string/image_map"></activity>
 
 
     </application>
