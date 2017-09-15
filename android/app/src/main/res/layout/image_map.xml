@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gmap_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.kt.maps.GMapFragment"
+            map:centerX="956820"
+            map:centerY="1942285"
+            map:rotation="0"
+            map:tilt="0"
+            map:zoom="0"
+            map:maxZoom="14"
+            map:minZoom="0"
+            map:tileMode="image"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/random_marker"
+                android:id="@+id/btnRandomMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:gravity="right"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/tvTestInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/zoomInButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/zoomin"
+                    android:onClick="onZoomIn" />
+
+                <Button
+                    android:id="@+id/zoomOutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/zoomout"
+                    android:onClick="onZoomOut" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>
