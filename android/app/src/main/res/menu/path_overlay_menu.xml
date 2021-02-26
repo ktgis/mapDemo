@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pathOverlay" android:title="@string/path_overlay"/>
+    <item android:id="@+id/arrowPathOverlay" android:title="@string/arrow_path_overlay"/>
+    <item android:id="@+id/routePathOverlay" android:title="@string/route_path_overlay"/>
+    <item android:id="@+id/trafficRoutePathOverlay" android:title="@string/traffic_route_path_overlay"/>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/markerAdd" android:title="@string/marker_add"/>
+    <item android:id="@+id/markerMove" android:title="@string/marker_move"/>
+    <item android:id="@+id/markerAnimation" android:title="@string/marker_animation"/>
+    <item android:id="@+id/markerCaption" android:title="@string/marker_caption"/>
+    <item android:id="@+id/markerFlat" android:title="@string/marker_flat"/>
+    <item android:id="@+id/markerClear" android:title="@string/marker_clear"/>
+</menu>

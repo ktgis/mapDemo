@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/defaultStyle"
+        android:title="@string/default_style" />
+    <item
+        android:id="@+id/darkStyle"
+        android:title="@string/dark_style" />
+    <item
+        android:id="@+id/driveStyle"
+        android:title="@string/drive_style" />
+    <item
+        android:id="@+id/darkDriveStyle"
+        android:title="@string/dark_drive_style" />
+
+    <item android:id="@+id/animationUse"
+        android:title="@string/use_style_animation"/>
+</menu>

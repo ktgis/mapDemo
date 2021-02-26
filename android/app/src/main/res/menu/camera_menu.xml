@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/camera_pan_by" android:id="@+id/cameraPanBy"/>
+    <item android:title="@string/camera_pan_to" android:id="@+id/cameraPanTo"/>
+    <item android:title="@string/camera_rotate_by" android:id="@+id/cameraRotateBy"/>
+    <item android:title="@string/camera_rotate_to" android:id="@+id/cameraRotateTo"/>
+    <item android:title="@string/camera_zoom_by_1m" android:id="@+id/cameraZoomBy1minus"/>
+    <item android:title="@string/camera_zoom_by_1p" android:id="@+id/cameraZoomBy1plus"/>
+    <item android:title="@string/camera_zoom_to" android:id="@+id/cameraZoomTo"/>
+    <item android:title="@string/camera_animation" android:id="@+id/cameraAnimation"/>
+</menu>

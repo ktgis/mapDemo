@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tilt_gesture" android:title="@string/tilt_gesture_enable"/>
+    <item android:id="@+id/rotate_gesture" android:title="@string/rotate_gesture_enable"/>
+    <item android:id="@+id/zoom_gesture" android:title="@string/zoom_gesture_enable"/>
+    <item android:id="@+id/pan_gesture" android:title="@string/pane_gesture_enable"/>
+</menu>

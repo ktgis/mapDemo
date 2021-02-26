@@ -1,55 +1,80 @@
 <resources>
+    <string name="app_name">KtMapDemo</string>
 
-    <string name="app_name">Map Demo</string>
-    <string name="action_settings">Settings</string>
-    <string name="map_demo">Map Demo</string>
-    <string name="basic_description">Zoom, Gesture, Marker</string>
-    <string name="navi_demo">Location Demo</string>
-    <string name="navi_description">Demo of integrating location api</string>
-    <string name="test">Do some test</string>
-    <string name="test_description">Activity for testing</string>
+
     <string name="open_drawer">open drawer</string>
     <string name="close_drawer">close drawer</string>
-    <string name="fps_test">FPS test</string>
-    <string name="fps_test_description">FPS test</string>
-    <string name="programmatic_map">Programmatically add map</string>
-    <string name="programmatic_map_description">Programmatically add map</string>
-    <string name="ground_overlay">GroundOverlay</string>
-    <string name="shapes">Shapes</string>
-    <string name="infowindows">InfoWindows</string>
-    <string name="clear">clear</string>
-    <string name="reset">reset</string>
-    <string name="default_infowindow">default infowindow</string>
-    <string name="custom_infowindow">custom infowindow</string>
-    <string name="map_style">Map Style</string>
-    <string name="data_import">Data Import</string>
-    <string name="marker_demo">Marker Demo</string>
-    <string name="hundreds_markers">Hundreds Markers Demo</string>
-    <string name="building_highlights">Building Highlights</string>
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
-    <string name="animation">animation</string>
-    <string name="no_animation">no animation</string>
-    <string name="drive_demo">Drive</string>
-    <string name="drive_description">Drive Demo</string>
-    <string name="traffic_info">Traffic Info</string>
-    <string name="traffic_info_description">Traffic Info</string>
-    <string name="multi_language">Multi-Language Demo</string>
-    <string name="multi_language_description">Korean, English, Chinese, ...</string>
-    <string name="toggleTrafficInfo">Traffic</string>
-    <string name="layers">Layers</string>
-    <string name="layers_description">Various layers consist map</string>
-    <string name="measure">Measure</string>
-    <string name="measure_description">distance and area measurement</string>
-    <string name="image_map">Image Map</string>
-    <string name="image_map_description">Image Map Style</string>
 
-    <!-- permission -->
-    <string name="permission_dialog_title">권한확인알림</string>
-    <string name="permission_dialog_content">앱 실행을 위해 앱 권한 승인이 필요합니다.</string>
-    <string name="permission_dialog_content_setting">앱 실행을 위해 앱 권한 승인이 필요합니다. \n앱 설정화면에서 권한을 활성화시켜 주시기 바랍니다.</string>
-    <string name="permission_dialog_button_positive">권한확인</string>
-    <string name="permission_dialog_button_positive_setting">권한승인</string>
-    <string name="permission_dialog_button_negative">앱종료</string>
+    <!--  Style Menu String  -->
+    <string name="use_style_animation">Use Animation</string>
+    <string name="default_style">Default Style</string>
+    <string name="dark_style">Night Style</string>
+    <string name="drive_style">Drive Style</string>
+    <string name="dark_drive_style">Drive Dark Style</string>
 
+    <!--  layer visible  -->
+    <string name="background_layer">배경 표출</string>
+    <string name="low_background_layer">저레벨 배경 표출</string>
+    <string name="building_layer">건물 표출</string>
+    <string name="label_layer">주기 표출</string>
+    <string name="low_label_layer">저레벨 주기 표출</string>
+    <string name="network_layer">교통선 표츌</string>
+
+    <!--  shape type  -->
+    <string name="polygon">면</string>
+    <string name="polyline">선</string>
+    <string name="circle">원</string>
+    <string name="shape_init">초기화</string>
+
+    <!--  Marker   -->
+    <string name="marker_add">마커 추가</string>
+    <string name="marker_move">마커 이동</string>
+    <string name="marker_animation">마커 애니메이션</string>
+    <string name="marker_caption">마커 켑션</string>
+    <string name="marker_flat">플랫 마커</string>
+    <string name="marker_clear">전체 마커 제거</string>
+
+
+    <!--  info window  -->
+    <string name="custom_info_window">Custom Adapter</string>
+    <string name="default_info_window">Default Adapter</string>
+    <string name="info_window_clear">clear info windows</string>
+
+    <!--  path overlay  -->
+    <string name="path_overlay">Path Overlay</string>
+    <string name="arrow_path_overlay">Arrow Path Overlay</string>
+    <string name="route_path_overlay">Route overlay</string>
+    <string name="traffic_route_path_overlay">Traffic Route overlay</string>
+
+    <!--  dynamic style change  -->
+    <string name="reset_style_edit">초기화</string>
+    <string name="pane_num_61">단지내도로</string>
+    <string name="pane_num_64">대로</string>
+    <string name="color_r">R</string>
+    <string name="color_g">G</string>
+    <string name="color_b">B</string>
+
+    <string name="location_last">lastLocation</string>
+    <string name="location_update">updateLocation</string>
+    <string name="location_compass">Compass</string>
+    <string name="location_gps">GPS</string>
+    <string name="location_none">None</string>
+
+    <string name="pane_gesture_enable">지동 이동</string>
+    <string name="rotate_gesture_enable">지도 회전</string>
+    <string name="zoom_gesture_enable">지도 확대/축소</string>
+    <string name="tilt_gesture_enable">지도 기울이기</string>
+
+
+    <string name="camera_zoom_by_1p">Zoom By(1)</string>
+    <string name="camera_zoom_by_1m">Zoom By(-1)</string>
+    <string name="camera_zoom_to">Zoom To(10)</string>
+    <string name="camera_rotate_to">Rotate to</string>
+    <string name="camera_rotate_by">Rotate by</string>
+    <string name="camera_pan_to">Move to</string>
+    <string name="camera_pan_by">Move by</string>
+    <string name="camera_animation">ViewpointChange</string>
+
+    <string name="cluster_clear_all">전체 마커 제거</string>
+    <string name="cluster_last_item">마지막 마커 제거</string>
 </resources>

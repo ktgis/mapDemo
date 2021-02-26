@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/num61Pane" android:title="@string/pane_num_61"/>
+    <item android:id="@+id/num64Pane" android:title="@string/pane_num_64"/>
+    <item android:id="@+id/resetStyle" android:title="@string/reset_style_edit"/>
+</menu>

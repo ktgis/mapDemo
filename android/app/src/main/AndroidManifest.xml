@@ -1,105 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kt.maps.demo">
+    package="com.kt.mapdemo">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:hardwareAccelerated="true"
+        android:name=".MapDemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="crashlyctics"
-            />
-
-        <meta-data
-            android:name="giskey"
-            android:value="gisKey"
-            />
-
-        <activity android:name=".MainActivity"
-            >
+        <activity android:name=".demo.plugin.cluster.MarkerClusterMapActivity"></activity>
+        <activity android:name=".demo.start.MapCoordinationActivity" />
+        <activity android:name=".demo.camera.MapGestureActivity" />
+        <activity android:name=".demo.camera.MapCameraActivity" />
+        <activity android:name=".demo.plugin.location.LocationMapActivity" />
+        <activity android:name=".demo.plugin.symol.LabelTapActivity" />
+        <activity android:name=".demo.plugin.style.DynamicStyleMapActivity" />
+        <activity android:name=".demo.plugin.traffic.TrafficLayerActivity" />
+        <activity android:name=".demo.overlay.PathOverlayActivity" />
+        <activity android:name=".demo.overlay.InfowindowActivity" />
+        <activity android:name=".demo.overlay.MarkerActivity" />
+        <activity android:name=".demo.overlay.MapShapeOverlayActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".BasicMapActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/map_demo" />
-        <activity
-            android:name=".NaviDemoActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/navi_demo" />
-        <activity
-            android:name=".ProgrammaticMapActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/programmatic_map" />
-        <activity
-            android:name=".FpsTestActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/fps_test" />
-        <activity
-            android:name="com.kt.maps.demo.MarkerActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/marker_demo" />
-        <activity
-            android:name="com.kt.maps.demo.GroundOverlayActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/ground_overlay" />
-        <activity
-            android:name="com.kt.maps.demo.ShapeActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/shapes" />
-        <activity
-            android:name="com.kt.maps.demo.InfoWindowActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/infowindows" />
-        <activity
-            android:name="com.kt.maps.demo.MapStyleActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/map_style" />
-        <activity
-            android:name="com.kt.maps.demo.HundredsMarkersActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/hundreds_markers" />
-        <activity
-            android:name="com.kt.maps.demo.DataImportActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/data_import" />
-        <activity
-            android:name="com.kt.maps.demo.BuildingHighlightsActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/building_highlights" />
-        <activity
-            android:name="com.kt.maps.demo.TrafficInfoActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/traffic_info" />
-        <activity
-            android:name="com.kt.maps.demo.MultiLanguageActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/multi_language" />
-        <activity
-            android:name="com.kt.maps.demo.LayersActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/layers" />
-        <activity
-            android:name="com.kt.maps.demo..ImageMapActivity"
-            android:label="@string/image_map"></activity>
-
-
+        <activity android:name=".demo.style.MapLayerActivity" />
+        <activity android:name=".demo.style.MapStyleActivity" />
+        <activity android:name=".demo.start.MapFragmentActivity" />
+        <activity android:name=".demo.start.MapViewActivity" />
+        <activity android:name=".demo.start.MapFragmentCodeActivity" />
     </application>
 
 </manifest>

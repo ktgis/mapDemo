@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/backgroundVisible" android:title="@string/background_layer"/>
+    <item android:id="@+id/buildingVisible" android:title="@string/building_layer"/>
+    <item android:id="@+id/labelVisible" android:title="@string/label_layer"/>
+    <item android:id="@+id/networkVisible" android:title="@string/network_layer"/>
+    <item android:id="@+id/lowBackgroundVisible" android:title="@string/low_background_layer"/>
+    <item android:id="@+id/lowLabelVisible" android:title="@string/low_label_layer"/>
+</menu>

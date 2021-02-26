@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/location_gps" android:title="@string/location_gps"/>
+    <item android:id="@+id/location_compass" android:title="@string/location_compass"/>
+    <item android:id="@+id/location_none" android:title="@string/location_none"/>
+</menu>
